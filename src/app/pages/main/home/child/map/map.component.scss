@@ -1,0 +1,13 @@
+:host {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gmap {
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
