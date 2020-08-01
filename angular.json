@@ -121,8 +121,13 @@
               "devServerTarget": "quality-plastics-limited:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "quality-plastics-limited"
 }
