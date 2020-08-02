@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy": "ng deploy --cname=placeholder.com",
+    "deploy": "ng deploy --cname=qualityplasticsltd.co.uk",
     "test": "ng test",
     "test:ci": "bash ./Deployment/no_focused_tests.sh && ng test --browsers ChromeHeadlessCI --code-coverage=true --watch=false",
     "lint": "ng lint",

@@ -10,15 +10,29 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
-      require('@angular-devkit/build-angular/plugins/karma')
+      require('@angular-devkit/build-angular/plugins/karma'),
     ],
+    customLaunchers: {
+      ChromeHeadlessCI: {
+        base: 'ChromeHeadless',
+        browserDisconnectTolerance: 3,
+        browserNoActivityTimeout: 300000,
+        browserDisconnectTimeout: 300000,
+        flags: ['--no-sandbox'],
+      },
+      singleRun: true,
+      restartOnFileChange: true,
+    },
     client: {
-      clearContext: false // leave Jasmine Spec Runner output visible in browser
+      clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, './coverage/quality-plastics-limited'),
+      dir: require('path').join(
+        __dirname,
+        './coverage/quality-plastics-limited',
+      ),
       reports: ['html', 'lcovonly', 'text-summary'],
-      fixWebpackSourcePaths: true
+      fixWebpackSourcePaths: true,
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
@@ -27,6 +41,6 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
   });
 };
