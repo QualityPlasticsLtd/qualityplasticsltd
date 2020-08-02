@@ -1,18 +1,25 @@
 .card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   width: 280px;
   height: 100%;
-  display: inline-block;
-  text-align: center;
-  margin: 10px 15px 20px;
-}
+  margin-left: 10px;
+  padding: 15px 15px;
+  border: 1px solid #bdcbd6;
+  border-radius: 10%;
+  background-color: #bbcad8;
 
-.quote {
-  text-align: justify;
-  margin-top: 15px !important;
-}
+  .company {
+    font-weight: bold;
+    text-align: left;
+  }
 
-.quotee {
-  text-align: justify;
-  text-align: right;
-  margin-top: 15px;
+  .quote {
+    text-align: justify;
+    margin-top: 15px !important;
+  }
+
+  .quotee {
+    text-align: right;
+  }
 }
