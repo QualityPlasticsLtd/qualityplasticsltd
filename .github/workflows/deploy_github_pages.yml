@@ -32,8 +32,8 @@ jobs:
 
     - name: Build and Deploy
       run: |
-        git config --global user.email dino.sources.rex@gmail.com
-        git config --global user.name DinoSourcesRex
-        git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/QualityPlastics.git
-        git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/DinoSourcesRex/QualityPlastics.git
+        git config --global user.email dino.sources.kadric@gmail.com
+        git config --global user.name QualityPlastics
+        git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/qualityplasticsltd.git
+        git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/QualityPlastics/qualityplasticsltd.git
         npm run deploy
