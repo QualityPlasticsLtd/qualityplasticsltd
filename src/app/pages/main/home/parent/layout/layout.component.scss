@@ -35,6 +35,7 @@ h3 {
 
 .header {
   background-color: #4e6d8d;
+  width: 100%;
   color: white;
 }
 
@@ -42,14 +43,10 @@ h3 {
   margin-bottom: 40px;
 }
 
-.contact-information {
+.contact-information-body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-
-  .contact-information-body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+  justify-content: center;
+  flex-wrap: wrap;
 }
